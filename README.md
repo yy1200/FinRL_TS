@@ -1,16 +1,16 @@
 # FinRL_TS
-##研究主題及背景描述
+## 研究主題及背景描述
 從歷史資料中找出與現今最相似的環境以進行訓練，目的為使投資組合的報酬最大。
 
 投資組合管理是市場上投資公司的一項重要交易任務。主要是將資金依照權重做適當的分配，在每段時間點上將資金投資到不同的資產類別上，藉由分散投資來達到分散風險以及優化投資組合報酬的目的。
 
-##文獻回顧及missing
-###傳統的金融資產配置模型
+## 文獻回顧及missing
+### 傳統的金融資產配置模型
 The Markowitz Optimization Enigma: Is ‘Optimized’ Optimal?
 Markowitz提出的現代投資組合理論或均值方差理論選擇給定風險水平下的最大預期收益，以增加實現預期收益的確定性。但其有一些侷限性，因為不容易確定未來的資產波動率，且模型太過簡單，無法學習複雜的市場環境。
 過往將機器學習、深度學習運用在投資組合上的例子與問題探討：
 
-###ML / DL
+### ML / DL
 Machine Learning and Portfolio Optimization
 採用正則化和交叉驗證這兩種機器學習方法，用於投資組合優化，並藉由約束投資組合風險和收益的樣本方差，降低估計誤差。
 Deep Learning for Portfolio Optimization
@@ -19,7 +19,7 @@ Deep Learning in Finance
 使用深度學習分層模型解決了金融預測和分類問題，並試圖預測價格走向或趨勢。
 但機器學習無法考慮每個交易之間的關係，會產生滑價、手續費等問題，所以目前的研究大多使用 RL 來處理連續交易。
 
-###RL
+### RL
 Adversarial Deep Reinforcement Learning in Portfolio Management
 使用DDPG、DPG和PPO進行投資組合優化，並採用對抗性方法訓練模型，顯著提升了回測期間的日均收益率和夏普比率，最後發現DPG算法具有更好的性能。
 Cryptocurrency Portfolio Management with Deep Reinforcement Learning
@@ -44,7 +44,7 @@ Financial portfolio optimization with online deep reinforcement learning and res
 提出了解決不完善環境的策略蒸餾方法。這種方法是一個師生學習框架，在這個框架中，擁有完美信息的老師被訓練成神諭來找出最優的交易策略，學生通過模仿老師的最優行為模式來學習。
 然而，以上所有方法都是學生向老師學習，沒有交互更新。但是，我們的老師會根據學生的反饋進行更新，通過選擇合適的環境來幫助學生解決概念漂移的問題。
 
-##主要嘗試的方法
+## 主要嘗試的方法
 共有 3 組投資組合，分別為：
 市值前十大 [‘AAPL’,‘MSFT’,‘AMZN’,‘TSLA’,‘GOOGL’,‘NVDA’,‘BRK-A’,‘META’,‘UNH’,'JNJ ']
 產業龍頭 [‘XOM’,‘BHP’,‘UPS’,‘AMZN’,‘WMT’,‘JNJ’,‘BRK-A’,‘AAPL’,‘GOOGL’,‘NEE’]
@@ -52,7 +52,7 @@ Financial portfolio optimization with online deep reinforcement learning and res
 設定步數 : 12000000 步
 以下實驗的 TRAIN_START_DATE (歷史起始日期)均設定為 2012-06-01
 
-##實驗：
+## 實驗：
 
 對照組方法 : 用歷史中(Train date)的每一天的來做訓練
 Random 方法 : 從歷史中隨機選取 100 個環境來做訓練
