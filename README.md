@@ -1,3 +1,6 @@
+用 Latex 撰寫之論文：[LaTex_new.pdf](https://github.com/yy1200/FinRL_TS/files/12726031/LaTex_new.pdf)
+
+
 # FinRL_TS
 ## 研究主題及背景描述
 從歷史資料中找出與現今最相似的環境以進行訓練，目的為使投資組合的報酬最大。
