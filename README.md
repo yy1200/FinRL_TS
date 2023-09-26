@@ -1,5 +1,4 @@
-用 Latex 撰寫之論文：[LaTex_new.pdf](https://github.com/yy1200/FinRL_TS/files/12726031/LaTex_new.pdf)
-
+用 Latex 撰寫之論文：[LaTex_new.pdf](https://github.com/yy1200/FinRL_TS/files/12726143/LaTex_new.pdf)
 
 # FinRL_TS
 ## 研究主題及背景描述
